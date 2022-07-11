@@ -1,0 +1,98 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.main-wrapper {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.35) 0px 0px 0px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 540px;
+  width: 300px;
+}
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
+  color: black;
+  text-decoration: none;
+}
+.main-logo {
+  height: 4.75rem;
+  width: auto;
+}
+.main-title {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -.125rem;
+  padding-right: 1rem;
+}
+.main-content {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: .5rem;
+  width: 87.5%;
+  min-height: 11.5rem;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+.main-top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+#main-back {
+  font-size: 1.9rem;
+  color: #555;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#main-back:hover {
+  animation: bounceBack 2s infinite;
+}
+.income-search-form {
+  width: 87.5%;
+}
+.main-searchbar {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 100%;
+  height: 3.25rem;
+  outline: none;
+  border: none;
+  border-radius: .35rem;
+  padding-left: .65rem;
+  padding-top: .125rem;
+  font-size: 1.55rem;
+  background-color: #fff;
+  border: 1px solid #bbb;
+}
+.main-searchbar:focus {
+  border-width: 2px;
+  border-color: #3586ffb5;
+  box-shadow: 0 0 7.5px #3586ff;
+}
+.no-results {
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #333;
+}
+.main-footer {
+  margin: 1.25rem 1rem;
+  line-height: 1.25;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.main-footer a {
+  text-decoration: underline;
+  font-style: italic;
+  color: #275cab;
+}

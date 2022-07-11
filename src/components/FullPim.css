@@ -1,0 +1,67 @@
+.full-pim-wrapper {
+  padding: 1rem 1.5rem .5rem;
+}
+.full-pim-top {
+  padding: 0 0 1.25rem 0;
+}
+#full-pim-back {
+  position: absolute;
+  font-size: 2rem;
+  margin-top: .325rem;
+  color: #444;
+  cursor: pointer;
+}
+#full-pim-back:hover {
+  animation: bounceBack 2s infinite;
+}
+@keyframes bounceBack {
+  0%, 60%, 80%, 100% {transform: translateX(0)} 
+  20% {transform: translateX(.2rem)} 
+  40% {transform: translateX(-.2rem)}
+} 
+.full-pim-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #252525;
+}
+.full-pim-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  box-shadow: rgba(0, 0, 0, 0.175) 0px 1px 2px 2px inset;
+  padding: 1.25rem 0 1.75rem;
+  border-radius: .75rem;
+}
+.power-active {
+  background: linear-gradient(-45deg, #fff, rgba(220, 20, 47, 0.8), #fff);
+  background-size: 400% 400%;
+  animation: gradient 16s ease infinite;
+}
+.power-inactive {
+  background: linear-gradient(-45deg, #fff, rgba(7, 189, 7, 0.5), #fff);
+  background-size: 400% 400%;
+  animation: gradient 16s ease infinite;
+}
+@keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+.full-pim-connected {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.power-button-wrapper {
+  /* border: 1px solid red; */
+}
+#full-pim-power {
+  font-size: 6.5rem;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+#full-pim-power:active {
+  transform: scale(.925);
+}

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "FetchIT",
+  "description": "The FetchIT Chrome Extension",
+  "version": "0.1",
+  "permissions": [
+    "unlimitedStorage",
+    "notifications",
+    "tabs",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "https://*/",
+    "http://*/"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "background":{    
+    "service_worker": "./service_worker/background.js"
+  }
+}
