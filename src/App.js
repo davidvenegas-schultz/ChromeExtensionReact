@@ -1,10 +1,13 @@
 import Main from './components/Main'
-import { FetchITContextProvider } from './context'
+import { FetchITContextProvider, useFetchITContext } from './context'
+import FullPim from './components/FullPim.js'
 
 function App() {
+  const { connected } = useFetchITContext()
+
   return (
     <FetchITContextProvider>
-      <Main/>
+      {connected ? <FullPim/> : <Main/>}
     </FetchITContextProvider>
   )
 }

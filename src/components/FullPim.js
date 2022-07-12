@@ -6,7 +6,7 @@ import { BsPower } from 'react-icons/bs'
 import { BiPowerOff } from 'react-icons/bi'
 
 function FullPim() {
-  const { setOpen, currentPIM, setCurrentPIM } = useFetchITContext()
+  const { setOpen, currentPIM, setCurrentPIM, setConnected } = useFetchITContext()
   const [localOpen, setLocalOpen] = useState(false)
 
   console.log(currentPIM)
@@ -24,10 +24,12 @@ function FullPim() {
   function handlePowerOn() {
     setLocalOpen(!localOpen)
     openTab(currentPIM.url)
+    setConnected(true)
   }
 
   function handlePowerOff() {
     setLocalOpen(!localOpen)
+    setConnected(false)
   }
 
   return (
