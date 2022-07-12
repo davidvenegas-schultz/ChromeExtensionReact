@@ -9,4 +9,4 @@ port.onMessage.addListener((msg) => {
 port.onDisconnect.addListener(() => {
   console.log("Disconnected")
 })
-port.postMessage({ text: "Hello, my name is david :)" })
+port.postMessage({ text: "Messages being received..." })

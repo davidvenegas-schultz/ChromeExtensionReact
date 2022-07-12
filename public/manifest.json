@@ -3,6 +3,9 @@
   "name": "FetchIT",
   "description": "The FetchIT Chrome Extension",
   "version": "0.1",
+  "icons": {
+    "48": "./logo.png"
+  },
   "permissions": [
     "unlimitedStorage",
     "notifications",
@@ -17,12 +20,6 @@
     "default_popup": "index.html",
     "default_title": "Open the popup"
   },
-  "content_scripts": [
-    {
-      "matches": ["https://*/", "http://*/"],
-      "js": ["main_content_script.js"]
-    }
-  ],
   "background":{    
     "service_worker": "./service_worker/background.js"
   }
