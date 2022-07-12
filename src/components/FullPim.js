@@ -1,5 +1,3 @@
-/*global chrome*/
-
 import './FullPim.css'
 import { useState } from 'react'
 import { useFetchITContext } from '../context.js'
@@ -25,24 +23,12 @@ function FullPim() {
 
   function handlePowerOn() {
     setLocalOpen(!localOpen)
-    // openTab('https://youtube.com/')
-    test()
+    openTab(currentPIM.url)
   }
 
   function handlePowerOff() {
     setLocalOpen(!localOpen)
   }
-
-  chrome.tabs.query({active: true, currentWindow:true}, tabs=>{
-    const activeTabId = tabs[0].id;
-    chrome.scripting.executeScript(
-      {
-        target: {tabId: activeTabId},
-        function: ()=>alert("React chrome extension alert")
-        // function: ()=>{document.body.innerHTML = "Hello World"}
-      }
-    )
-  })
 
   return (
     <div className={"full-pim-wrapper"}>
