@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "FetchIT",
-  "description": "The FetchIT Chrome Extension",
+  "name": "FetchIT [React Version]",
+  "description": "The FetchIT Chrome Extension [React Version]",
   "version": "0.1",
   "icons": {
     "48": "./logo.png"
